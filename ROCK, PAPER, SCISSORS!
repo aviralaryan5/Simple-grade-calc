@@ -1,0 +1,18 @@
+ROCK, PAPER, SCISSORS!
+print("Rock, Paper, Scissors")
+print()
+print (" Select your move (R, P or S")
+print()
+player_1 = input ("> ")
+player_2 = input ("> ")
+print()
+if (player_1 == "R" and player_2 == "R") or \
+   (player_1 == "S" and player_2 == "S") or \
+   (player_1 == "P" and player_2 == "P"):
+    print("draw".center(50))
+elif (player_1 == "R" and player_2 == "S") or \
+     (player_1 == "S" and player_2 == "P") or \
+     (player_1 == "P" and player_2 == "R"):
+    print("Player 1 wins".center(50))
+else:
+    print("Player 2 wins".center(50))
